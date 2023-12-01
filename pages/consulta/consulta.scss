@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'dodger3';
+    src: url("../assets/fonts/dodger3.ttf") format('truetype')
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: #ffff;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Inter;
+
+    .background {
+        position: fixed;
+        width: 100vw;
+        height: 110vh;
+    
+    }
+
+    header {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .logo {
+            width: 150px;
+
+        }
+
+        h1 {
+            position: relative;
+            right: 20%;
+            color: #ffff;
+            font-family: dodger3;
+            
+        }
+    }
+
+    table {
+        position: relative;
+        width: 90%;
+        left: 3%;
+        text-align: center;
+        border: 2px solid #ffff;
+        flex-wrap: wrap;
+        margin: 20px;
+        
+        tr {
+            flex-direction: column;
+            border: 2px solid #ffff;
+            background-color:  rgba(84, 83, 83, 0.548);
+            backdrop-filter: blur(25px);
+
+            th {
+                padding: 10px;
+                border: 2px solid #ffff;
+            }
+        }
+    }
+}

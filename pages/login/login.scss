@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'dodger3';
+    src: url("../assets/fonts/dodger3.ttf") format('truetype')
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .main-login{
+        width: 100vw; 
+        height: 100vh; 
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+    
+    .left-login{
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+    
+        h1{
+            font-family: 'dodger3', sans-serif;
+            font-size: 3vw;
+            color: #ffff;
+            z-index: 2;
+            margin: -10px 0px 20px 30px;
+    
+            span {
+                font: 700;
+                color: #CB1717;
+            }
+        }
+        .image{
+            width: 400px; 
+            height: 430px; 
+            margin-top: 10px; 
+            margin-right: 20%;
+        }
+    }
+    
+    .right-login{
+        width:40vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+        .card-login{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0px 35px 20px 35px;  /*em baixo e em cima tem 30px e dos lados 35px de espaçamento interno*/
+            font-family: Inter;
+
+           .logo {
+            width: 130px;
+            margin: 0;
+            padding: 0;
+           }
+    
+            .textfield{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                margin: 10px 0px;
+    
+                 input{
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 15px;
+                    background: #514869;
+                    color: #6d7676de;
+                    font-size: 12pt;
+                    outline: none;
+                    box-sizing: border-box;
+                }
+    
+                label{
+                    color:#f0ffffde;
+                    margin-bottom: 10px;
+                }
+    
+                & ::placeholder{
+                    color: #f0ffffde;
+                }
+            }
+    
+            .btn-login{
+                width: 100%;
+                padding: 16px 0px;
+                margin: 25px;
+                border: none;
+                border-radius: 8px;
+                outline:none;
+                text-transform: uppercase;
+                font-weight: 800;
+                letter-spacing: 3px;
+                color: #ffffff;
+                background: #CB1717;
+                cursor: pointer;
+                box-shadow: 0px 10px 40px -12px #00ff8052; /* lados, em cima ou em baixo, blur (esfumado), sprading, cor da sombra*/
+                
+    
+                &:hover {
+                    background-color: #d33e3e;
+                    color: #ffff;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+            }
+    
+            .striped {
+                display: flex;
+                color: #ffff;
+                font-size: 12px;
+    
+                .meio {
+                    padding: 0 10px;
+                }
+            }
+    
+            .cadastro__button {
+                margin-top: 10px;
+                color: #ffff;
+                text-decoration: none;
+    
+                &:hover {
+                    color: #CB1717;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 950px){  /*quando a tela atingir 950px o card deve diminuir também*/
+        .card-login{
+            width: 85%;
+        }
+    }
+        
+    @media only screen and (max-width: 600px){
+        .main-login{
+            flex-direction: column;
+        }
+    
+        .left-login {
+            width: 100%;
+            height: auto;
+    
+            h1{
+                display: none;
+            }
+            
+            .image{
+                width: 80vw;
+            }
+        }
+    
+        .right-login{
+            width: 100%;
+            height: auto;
+    
+            .card-login{
+                width: 90%;
+            }
+        }
+    }
+    }
+}

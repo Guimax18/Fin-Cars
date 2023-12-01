@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+@font-face {
+  font-family: "dodger3";
+  src: url("../assets/fonts/dodger3.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .main-login {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+body .main-login .left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+body .main-login .left-login h1 {
+  font-family: "dodger3", sans-serif;
+  font-size: 3vw;
+  color: white;
+  z-index: 2;
+  margin: -10px 0px 20px 30px;
+}
+body .main-login .left-login h1 span {
+  font: 700;
+  color: #CB1717;
+}
+body .main-login .left-login .image {
+  width: 400px;
+  height: 430px;
+  margin-top: 10px;
+  margin-right: 20%;
+}
+body .main-login .right-login {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body .main-login .right-login .card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 35px 20px 35px; /*em baixo e em cima tem 30px e dos lados 35px de espaçamento interno*/
+  font-family: Inter;
+}
+body .main-login .right-login .card-login .logo {
+  width: 130px;
+  margin: 0;
+  padding: 0;
+}
+body .main-login .right-login .card-login .textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+body .main-login .right-login .card-login .textfield input {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  background: #514869;
+  color: rgba(109, 118, 118, 0.8705882353);
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;
+}
+body .main-login .right-login .card-login .textfield label {
+  color: rgba(240, 255, 255, 0.8705882353);
+  margin-bottom: 10px;
+}
+body .main-login .right-login .card-login .textfield ::-moz-placeholder {
+  color: rgba(240, 255, 255, 0.8705882353);
+}
+body .main-login .right-login .card-login .textfield ::placeholder {
+  color: rgba(240, 255, 255, 0.8705882353);
+}
+body .main-login .right-login .card-login .btn-login {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #ffffff;
+  background: #CB1717;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px rgba(0, 255, 128, 0.3215686275); /* lados, em cima ou em baixo, blur (esfumado), sprading, cor da sombra*/
+}
+body .main-login .right-login .card-login .btn-login:hover {
+  background-color: #d33e3e;
+  color: white;
+}
+body .main-login .right-login .card-login .btn-login a {
+  text-decoration: none;
+  color: #ffffff;
+}
+body .main-login .right-login .card-login .striped {
+  display: flex;
+  color: white;
+  font-size: 12px;
+}
+body .main-login .right-login .card-login .striped .meio {
+  padding: 0 10px;
+}
+body .main-login .right-login .card-login .cadastro__button {
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+body .main-login .right-login .card-login .cadastro__button:hover {
+  color: #CB1717;
+}
+@media only screen and (max-width: 950px) {
+  body .main-login { /*quando a tela atingir 950px o card deve diminuir também*/ }
+  body .main-login .card-login {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .main-login .main-login {
+    flex-direction: column;
+  }
+  body .main-login .left-login {
+    width: 100%;
+    height: auto;
+  }
+  body .main-login .left-login h1 {
+    display: none;
+  }
+  body .main-login .left-login .image {
+    width: 80vw;
+  }
+  body .main-login .right-login {
+    width: 100%;
+    height: auto;
+  }
+  body .main-login .right-login .card-login {
+    width: 90%;
+  }
+}/*# sourceMappingURL=login.css.map */

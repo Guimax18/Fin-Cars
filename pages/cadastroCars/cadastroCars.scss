@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'dodger3';
+    src: url("../assets/fonts/dodger3.ttf") format('truetype')
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .background {
+        width: 100VW;
+        height: 120vh;
+        
+        position: fixed;
+        opacity: .9;
+    }
+
+    .main-login{
+        width: 100vw; 
+        height: 100vh; 
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+    
+    
+    
+    .right-login{
+        width:50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 40%;
+    
+        .card-login{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0px 35px 20px 35px;  /*em baixo e em cima tem 30px e dos lados 35px de espaçamento interno*/
+            font-family: Inter;
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            background: rgba(84, 83, 83, 0.548);
+
+           .logo {
+            width: 130px;
+            margin: 0;
+            padding: 0;
+           }
+    
+            .textfield{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                margin: 10px 0px;
+    
+                 input{
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 15px;
+                    background: #514869;
+                    color: #6d7676de;
+                    font-size: 12pt;
+                    outline: none;
+                    box-sizing: border-box;
+                }
+    
+                label{
+                    color:#f0ffffde;
+                    margin-bottom: 10px;
+                }
+    
+                & ::placeholder{
+                    color: #f0ffffde;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                width: 100%;
+                margin: 10px;
+
+                .btn-adicionar{
+                    width: 200px;
+                    height: 50px;
+                     margin: 10px;
+                    
+                    border: none;
+                    border-radius: 8px;
+                    outline:none;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    color: #ffffff;
+                    background: #CB1717;
+                    cursor: pointer;
+                    
+        
+                    &:hover {
+                        background-color: #d33e3e;
+                        color: #ffff;
+                    }
+        
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                }
+    
+                .btn-deletar{
+                    width: 200px;
+                   height: 50px;
+                   margin: 10px;
+                    border: none;
+                    border-radius: 8px;
+                    outline:none;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    color: #ffffff;
+                    background: #CB1717;
+                    cursor: pointer;
+                    
+        
+                    &:hover {
+                        background-color: #d33e3e;
+                        color: #ffff;
+                    }
+        
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                }
+        
+                .btn-consultar{
+                  
+                   width: 200px;
+                   height: 50px;
+                   margin: 10px;
+                    border: none;
+                    border-radius: 8px;
+                    outline:none;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    
+                    color: #ffffff;
+                    background: #CB1717;
+                    cursor: pointer;
+                    
+        
+                    &:hover {
+                        background-color: #d33e3e;
+                        color: #ffff;
+                    }
+        
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                }
+            }
+    
+        }
+    }
+    
+    @media only screen and (max-width: 950px){  /*quando a tela atingir 950px o card deve diminuir também*/
+        .card-login{
+            width: 85%;
+        }
+    }
+        
+    @media only screen and (max-width: 600px){
+        .main-login{
+            flex-direction: column;
+        }
+    
+        .left-login {
+            width: 100%;
+            height: auto;
+    
+            h1{
+                display: none;
+            }
+            
+            .image{
+                width: 80vw;
+            }
+        }
+    
+        .right-login{
+            width: 100%;
+            height: auto;
+    
+            .card-login{
+                width: 90%;
+            }
+        }
+    }
+    }
+}
